@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["...", "php82", "php82Packages.composer"]
+nixPkgs = ["...", "php82", "php82Packages.composer", "php82Extensions.gd", "php82Extensions.exif", "php82Extensions.pdo_mysql"]
 
 [phases.install]
 cmds = ["DB_CONNECTION=sqlite DB_DATABASE=:memory: CACHE_STORE=array SESSION_DRIVER=array composer install --no-dev --optimize-autoloader"]
